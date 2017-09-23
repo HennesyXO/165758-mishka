@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Мишка</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="учебный проект">
+    <meta name="author" content="HTMLACADEMY">
+    <meta name="robots" content="noindex, nofollow">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <!-- font-family: 'Open Sans', sans-serif; -->
+    <!-- <link rel="stylesheet" href="css/style.min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body class="no-js">
+
+    <header class="header">
+      <div class="header-top">
+
+        <div class="header-top__logo">
+          <a href="#">
+            <img src="http://via.placeholder.com/350x150" width="86" height="35" alt="logo">
+          </a>
+        </div>
+
+        <div class="header-top__menu">
+          <img class="menu-svg" src="http://via.placeholder.com/100x150" alt="" width="20" height="14">
+
+          <nav class="main-nav main-nav--opened">
+
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item--active"><a href="catalog.html" class="main-nav__link">Каталог товаров</a></li>
+              <li class="main-nav__item"><a href="form.html" class="main-nav__link">Вязание на заказ</a></li>
+              <li class="main-nav__item"><a href="form.html" class="main-nav__link">Поиск по сайту</a></li>
+              <li class="main-nav__item"><a href="https://htmlacademy.ru/#" class="main-nav__link">Корзина: пока пуста</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+    </header>
+    <main>
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <h6 class="filter-name">Вязание на заказ</h6>
+        <p class="header-bottom_description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+
+        <fieldset class="filter-radio">
+          <legend>ТИП</legend>
+          <input type="radio" name="type" value="value1" id="value1" checked>
+          <label for="value1">Аксессуар для интерьера</label>
+
+          <input type="radio" name="type" value="value2" id="value2">
+          <label for="value2">Детская игрушка</label>
+        </fieldset>
+
+        <fieldset class="filter-checkbox">
+          <legend>ЦВет</legend>
+           <!-- width="44" height="43" of checkbox-->
+          <input type="checkbox" name="colours" value="white" id="white" checked>
+          <label for="white">Белый</label>
+
+          <input type="checkbox" name="colours" value="gray" id="gray" checked>
+          <label for="gray">Серый</label>
+
+          <input type="checkbox" name="colours" value="tiffani" id="tiffani">
+          <label for="tiffani">«Тиффани»</label>
+
+          <input type="checkbox" name="colours" value="black" id="black">
+          <label for="black">Черный</label>
+
+          <input type="checkbox" name="colours" value="pink" id="pink">
+          <label for="pink">Розовый</label>
+
+          <input type="checkbox" name="colours" value="orange" id="orange">
+          <label for="orange">Оранжевый</label>
+
+        </fieldset>
+
+        <fieldset class="filter-textfield">
+          <legend>ФИО</legend>
+
+          <div class="form__group">
+            <div class="form__group-input">
+              <label class="form__label" for="name">Имя:</label>
+              <input class="form__input" type="text" name="name" id="name" value="" placeholder="Введите ваше имя*">
+            </div>
+
+            <div class="form__group-input">
+              <label class="form__label" for="second-name">Фамилия:</label>
+              <input class="form__input" type="text" name="second-name" id="second-name" value="" placeholder="Укажите фамилию*">
+            </div>
+
+            <div class="form__group-input">
+              <label class="form__label  feedback-form__label--uppercase" for="patronymic">Отчество:</label>
+              <input class="form__input" type="text" name="patronymic" id="patronymic" value="" placeholder="Отчество, если желаете">
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="filter-textfield">
+          <legend>тел</legend>
+          <label class="form__label" for="phone"></label>
+          <input class="form__input form__input--phone" type="number" name="phone" id="phone" placeholder="+7 ХХХ ХХ ХХ*">
+        </fieldset>
+
+        <fieldset class="filter-textfield">
+          <legend>E-mail</legend>
+          <label class="form__label" for="e-mail"></label>
+          <input class="form__input form__input--email" type="email" name="e-mail" id="e-mail" placeholder="Ваш Email*">
+        </fieldset>
+
+        <fieldset class="filter-textfield">
+          <legend>Доп</legend>
+          <textarea class="form__textarea" name="textarea" rows="5" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <p class="form__required-fileds">*Поля обязательны для заполнения</p>
+        </fieldset>
+
+        <button type="submit" class="main-filter-btn">ОТПРАВИТЬ ЗАКАЗ</button>
+      </form>
+    </main>
+    <footer class="footer">
+      <div class="footer-wrapper">
+
+        <div class="social">
+          <a class="social-btn social-in" href="http://via.placeholder.com/50x50">
+            <img class="insta-svg" src="http://via.placeholder.com/50x50" alt="" width="22" height="21">
+          </a>
+          <a class="social-btn social-fb" href="http://via.placeholder.com/50x50">
+            <img src="http://via.placeholder.com/50x50" alt="" width="15" height="29">
+          </a>
+          <a class="social-btn social-tw" href="http://via.placeholder.com/50x50">
+            <img class="twitter-svg" src="http://via.placeholder.com/50x50" alt="" width="24" height="20">
+          </a>
+        </div>
+
+        <div class="copyrights">
+          <p class="copyrights__text">Разработано </p>
+          <div class="copyrights__logo">
+            <a href="#">
+              <img class="htmlacademy-svg" src="http://via.placeholder.com/50x50" alt="" width="27" height="34">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
