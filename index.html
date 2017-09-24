@@ -16,46 +16,39 @@
 
   </head>
   <body class="no-js">
-
-    <header class="header">
-      <div class="header-top">
-
-        <div class="header-top__logo">
-          <a href="#">
-            <img src="http://via.placeholder.com/350x150" width="86" height="35" alt="logo">
-          </a>
-        </div>
-
-        <div class="header-top__menu">
-          <img class="menu-svg" src="images/menu_svg.png" alt="menu" width="20" height="14">
-
-          <nav class="main-nav main-nav--opened">
-
-            <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--active"><a href="catalog.html" class="main-nav__link">Каталог товаров</a></li>
-              <li class="main-nav__item"><a href="form.html" class="main-nav__link">Вязание на заказ</a></li>
-              <li class="main-nav__item"><a href="form.html" class="main-nav__link">Поиск по сайту</a></li>
-              <li class="main-nav__item"><a href="https://htmlacademy.ru/#" class="main-nav__link">Корзина: пока пуста</a></li>
-            </ul>
-          </nav>
-        </div>
+    <header class="page-header">
+      <div class="page-header__logo">
+        <a href="index.html">
+          <img src="http://via.placeholder.com/350x150" width="86" height="35" alt="logo">
+        </a>
       </div>
+      <nav class="main-nav main-nav--opened">
+        <button class="main-nav__toggle" type="button">Открыть меню</button> <!-- width="20" height="14" -->
 
-      <div class="header-bottom">
-        <h1 class="header-bottom__text">Милые штуки ручной<br>работы для дома</h1>
-
-        <div class="header-bottom__group">
-          <p class="">Предметы<br>интерьера</p>
-          <img class="header-bottom__icon" src="http://placehold.it/30x30" alt="Interier items" width="41" height="62">
-        </div>
-        <div class="header-bottom__group">
-          <p class="">Детские<br>игрушки</p>
-          <img class="header-bottom__icon" src="http://placehold.it/30x30" alt="Children toys" width="61" height="61">
-        </div>
-      </div>
-
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active"><a href="catalog.html" class="main-nav__link">Каталог товаров</a></li>
+          <li class="main-nav__item main-nav__item--active"><a href="form.html" class="main-nav__link">Вязание на заказ</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Поиск по сайту</a></li>
+          <li class="main-nav__item"><a href="https://htmlacademy.ru/#" class="main-nav__link">Корзина: пока пуста</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
+      <div class="title">
+        <h1 class="title__text">Милые штуки ручной<br>работы для дома</h1>
+      <a href="#">
+        <div class="title__group">
+          <p class="">Предметы<br>интерьера</p>
+          <img class="title__icon" src="http://placehold.it/30x30" alt="Interier items" width="41" height="62">
+        </div>
+        </a>
+      <a href="#">
+        <div class="title__group">
+          <p class="">Детские<br>игрушки</p>
+          <img class="title__icon" src="http://placehold.it/30x30" alt="Children toys" width="61" height="61">
+        </div>
+      </a>
+      </div>
       <section class="featured">
         <div class="featured-inner">
           <h2 class="featured__title">Вязаные корзинки</h2>
@@ -143,6 +136,8 @@
 <!-- map -->
       <div class="map-holder">
         <img class="map" src="" alt="" width="67" height="100">
+        ,<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5728196125579!2d30.321544524885933!3d59.939230305889055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1506217676667" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+
 
         <div class="map-btn-holder">
           <button type="submit" class="map-btn">
@@ -179,6 +174,28 @@
       </div>
     </footer>
 
+    <div class="cart-notification">
+
+      <form action="/cart" method="post">
+        <p class="cart-notification-title">Товар добавлен в корзину!</p>
+        <p class="cart-notification-text">Выберите размер:</p>
+        <fieldset class="filter-checkbox">
+          <legend></legend>
+
+          <input type="checkbox" name="size" value="1" id="1" checked>
+          <label for="1">S</label>
+
+          <input type="checkbox" name="size" value="2" id="2">
+          <label for="2">M</label>
+
+          <input type="checkbox" name="size" value="3" id="3">
+          <label for="3">L</label>
+        </fieldset>
+        <div class="cart-notification-decision">
+          <button type="submit" class="cart-order-btn">Добавить</button>
+        </div>
+      </form>
+    </div>
     <!-- <script src="js/script.js"></script> -->
   </body>
 </html>
