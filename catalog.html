@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Мишка</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="учебный проект">
+    <meta name="author" content="HTMLACADEMY">
+    <meta name="robots" content="noindex, nofollow">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <!-- font-family: 'Open Sans', sans-serif; -->
+    <!-- <link rel="stylesheet" href="css/style.min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body class="no-js">
+    <header class="page-header">
+      <div class="page-header__logo">
+        <a href="index.html">
+          <img src="http://via.placeholder.com/350x150" width="86" height="35" alt="logo">
+        </a>
+      </div>
+      <nav class="main-nav main-nav--opened">
+        <button class="main-nav__toggle" type="button">Открыть меню</button> <!-- width="20" height="14" -->
+
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Каталог товаров</a></li>
+          <li class="main-nav__item"><a href="form.html" class="main-nav__link">Вязание на заказ</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Поиск по сайту</a></li>
+          <li class="main-nav__item"><a href="https://htmlacademy.ru/#" class="main-nav__link">Корзина: пока пуста</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="catalog">
+        <h1 class="text">Каталог товаров</h1>
+
+        <div class="catalog-items">
+
+          <article class="catalog-item">
+            <div class="catalog-item__inner">
+              <img width="260" height="195" src="http://placehold.it/150x100" alt="Printed rabbit">
+              <a href="#"><h5 class="catalog-item__title">Зайчик-попрыгайчик</h5></a>
+
+              <p class="catalog-item__description">Рост 30 см, вес 200 г</p>
+              <div class="cart-block">
+                <span class="cart-block__price">1 200 руб.</span>
+                <button type="button" class="cart-block__btn">cart</button><!-- width="21" height="19" -->
+              </div>
+            </div>
+          </article>
+
+          <article class="catalog-item">
+            <div class="catalog-item__inner">
+              <img width="260" height="195" src="http://placehold.it/150x100" alt="Printed backet">
+              <a href="#">
+                <h5 class="catalog-item__title">Корзинка для белья</h5>
+              </a>
+
+              <p class="catalog-item__description">Диаметр 15 см, высота 10 см</p>
+              <div class="cart-block">
+                <span class="cart-block__price">690 руб.</span>
+                <button type="button" class="cart-block__btn">cart</button><!-- width="21" height="19" -->
+              </div>
+
+            </div>
+          </article>
+
+          <article class="catalog-item">
+            <div class="catalog-item__inner">
+              <img width="260" height="195" src="http://placehold.it/150x100" alt="Big Printed backet">
+              <a href="#"><h5 class="catalog-item__title">Большая корзинка<br>для игрушек</h5></a>
+
+              <p class="catalog-item__description">Диаметр 30 см, высота 30 см</p>
+              <div class="cart-block">
+                <span class="cart-block__price">1 500 руб.</span>
+                <button type="button" class="cart-block__btn">cart</button><!-- width="21" height="19" -->
+              </div>
+
+            </div>
+          </article>
+
+          <article class="video">
+            <h5 class="video__title">Процесс производства</h5>
+            <video src="http://placehold.it/150x100" width="32" height="22"></video><!-- width="32" height="22" -->
+
+            <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <a href="#">Сделать заказ</a>
+
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-wrapper">
+
+        <div class="social">
+          <a class="social__btn social__btn--in" href="http://via.placeholder.com/50x50">
+            <img class="insta-svg" src="http://via.placeholder.com/50x50" alt="" width="22" height="21">
+          </a>
+          <a class="social__btn social__btn--fb" href="http://via.placeholder.com/50x50">
+            <img src="http://via.placeholder.com/50x50" alt="" width="15" height="29">
+          </a>
+          <a class="social__btn social__btn--tw" href="http://via.placeholder.com/50x50">
+            <img class="twitter-svg" src="http://via.placeholder.com/50x50" alt="" width="24" height="20">
+          </a>
+        </div>
+
+        <div class="copyright">
+          <p class="copyright__text">Разработано </p>
+          <a href="#"  class="copyright__logo">
+            <img class="htmlacademy-svg" src="http://via.placeholder.com/50x50" alt="" width="27" height="34">
+          </a>
+        </div>
+
+      </div>
+    </footer>
+    <div class="popup">
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <h4 class="popup__title">Товар добавлен в корзину!</h4>
+        <p class="popup__text">Выберите размер:</p>
+        <fieldset class="popup__checkbox">
+
+          <input type="checkbox" class="S" name="size" value="1" id="1" checked>
+          <label for="1">S</label>
+
+          <input type="checkbox" class="M"  name="size" value="2" id="2">
+          <label for="2">M</label>
+
+          <input type="checkbox"  class="L" name="size" value="3" id="3">
+          <label for="3">L</label>
+        </fieldset>
+
+        <button type="submit" class="btn btn--popup">Добавить</button>
+      </form>
+    </div>
+    <!-- <script src="js/script.js"></script> -->
+  </body>
+</html>
