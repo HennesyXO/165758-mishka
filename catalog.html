@@ -43,14 +43,12 @@
           <article class="catalog-item">
             <div class="catalog-item__inner">
               <img width="260" height="195" src="http://placehold.it/150x100" alt="Printed rabbit">
-              <h5 class="catalog-item__title">Зайчик-попрыгайчик</h5>
+              <a href="#"><h5 class="catalog-item__title">Зайчик-попрыгайчик</h5></a>
 
               <p class="catalog-item__description">Рост 30 см, вес 200 г</p>
-              <hr>
               <div class="cart-block">
-                <a href="#" class="catalog-item__price">1 200 руб.</a>
-                  <img class="cart-svg" src="images/cart_svg.png" alt="Order" width="21" height="19">
-                    <button type="submit" class="catalog-item-btn">cart</button>
+                <span class="cart-block__price">1 200 руб.</span>
+                <button type="button" class="cart-block__btn">cart</button><!-- width="21" height="19" -->
               </div>
             </div>
           </article>
@@ -58,44 +56,40 @@
           <article class="catalog-item">
             <div class="catalog-item__inner">
               <img width="260" height="195" src="http://placehold.it/150x100" alt="Printed backet">
+              <a href="#">
                 <h5 class="catalog-item__title">Корзинка для белья</h5>
+              </a>
 
-                <p class="catalog-item__description">Диаметр 15 см, высота 10 см</p>
-                <hr>
-                <div class="cart-block">
-                  <a href="#" class="catalog-item__price">690 руб.</a>
-                  <img class="cart-svg" src="images/cart_svg.png" alt="Order" width="21" height="19">
-                    <button type="submit" class="catalog-item-btn">cart</button>
-                </div>
+              <p class="catalog-item__description">Диаметр 15 см, высота 10 см</p>
+              <div class="cart-block">
+                <span class="cart-block__price">690 руб.</span>
+                <button type="button" class="cart-block__btn">cart</button><!-- width="21" height="19" -->
+              </div>
+
             </div>
           </article>
 
           <article class="catalog-item">
             <div class="catalog-item__inner">
               <img width="260" height="195" src="http://placehold.it/150x100" alt="Big Printed backet">
-                <h5 class="catalog-item__title">Большая корзинка<br>для игрушек</h5>
+              <a href="#"><h5 class="catalog-item__title">Большая корзинка<br>для игрушек</h5></a>
 
-                <p class="catalog-item__description">Диаметр 30 см, высота 30 см</p>
-                <hr>
-                <div class="cart-block">
-                  <a href="#" class="catalog-item__price">1 500 руб.</a>
-                  <img class="cart-svg" src="images/cart_svg.png" alt="Order" width="21" height="19">
-                    <button type="submit" class="catalog-item-btn">cart</button>
-                </div>
+              <p class="catalog-item__description">Диаметр 30 см, высота 30 см</p>
+              <div class="cart-block">
+                <span class="cart-block__price">1 500 руб.</span>
+                <button type="button" class="cart-block__btn">cart</button><!-- width="21" height="19" -->
+              </div>
+
             </div>
           </article>
 
           <article class="video">
-            <div class="video__inner">
-              <h5 class="video__title">Процесс производства</h5>
-              <img class="video-svg" src="http://placehold.it/150x100" alt="Order" width="32" height="22">
+            <h5 class="video__title">Процесс производства</h5>
+            <video src="http://placehold.it/150x100" width="32" height="22"></video><!-- width="32" height="22" -->
 
-              <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <a href="#">Сделать заказ</a>
 
-              <div class="video-btn-holder">
-                <button type="submit" class="video-btn">СДелать заказ</button>
-              </div>
-            </div>
           </article>
         </div>
       </div>
@@ -105,46 +99,43 @@
       <div class="footer-wrapper">
 
         <div class="social">
-          <a class="social-btn social-in" href="http://via.placeholder.com/50x50">
+          <a class="social__btn social--in" href="http://via.placeholder.com/50x50">
             <img class="insta-svg" src="http://via.placeholder.com/50x50" alt="" width="22" height="21">
           </a>
-          <a class="social-btn social-fb" href="http://via.placeholder.com/50x50">
+          <a class="social__btn social--fb" href="http://via.placeholder.com/50x50">
             <img src="http://via.placeholder.com/50x50" alt="" width="15" height="29">
           </a>
-          <a class="social-btn social-tw" href="http://via.placeholder.com/50x50">
+          <a class="social__btn social--tw" href="http://via.placeholder.com/50x50">
             <img class="twitter-svg" src="http://via.placeholder.com/50x50" alt="" width="24" height="20">
           </a>
         </div>
 
-        <div class="copyrights">
-          <p class="copyrights__text">Разработано </p>
-          <div class="copyrights__logo">
-            <a href="#">
-              <img class="htmlacademy-svg" src="http://via.placeholder.com/50x50" alt="" width="27" height="34">
-            </a>
-          </div>
+        <div class="copyright">
+          <p class="copyright__text">Разработано </p>
+          <a href="#"  class="copyright__logo">
+            <img class="htmlacademy-svg" src="http://via.placeholder.com/50x50" alt="" width="27" height="34">
+          </a>
         </div>
+
       </div>
     </footer>
-    <div class="cart-notification">
-      <form action="/cart" method="post">
-        <p class="cart-notification-title">Товар добавлен в корзину!</p>
-        <p class="cart-notification-text">Выберите размер:</p>
-        <fieldset class="filter-checkbox">
-          <legend></legend>
+    <div class="popup">
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <h4 class="popup__title">Товар добавлен в корзину!</h4>
+        <p class="popup__text">Выберите размер:</p>
+        <fieldset class="popup__checkbox">
 
-          <input type="checkbox" name="size" value="1" id="1" checked>
+          <input type="checkbox" class="S" name="size" value="1" id="1" checked>
           <label for="1">S</label>
 
-          <input type="checkbox" name="size" value="2" id="2">
+          <input type="checkbox" class="M"  name="size" value="2" id="2">
           <label for="2">M</label>
 
-          <input type="checkbox" name="size" value="3" id="3">
+          <input type="checkbox"  class="L" name="size" value="3" id="3">
           <label for="3">L</label>
         </fieldset>
-        <div class="cart-notification-decision">
-          <button type="submit" class="cart-order-btn">Добавить</button>
-        </div>
+
+        <button type="submit" class="btn btn--popup">Добавить</button>
       </form>
     </div>
     <!-- <script src="js/script.js"></script> -->
