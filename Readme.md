@@ -1,7 +1,8 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ирина С](https://up.htmlacademy.ru/adaptive/12/user/165758).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Попов](https://htmlacademy.ru/profile/id504605).
+
 
 ---
 
