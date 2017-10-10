@@ -1,0 +1,25 @@
+.btn{
+  display: block;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  //width: 100%;
+  font-size: 17px;
+  line-height: 1.1;
+  font-weight: bold;
+  color: $base-color;
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+
+@media #{$tablet-widths} {
+  .btn{
+  }
+}
+
+@media #{$desktop-widths} {
+  .btn{
+  }
+}

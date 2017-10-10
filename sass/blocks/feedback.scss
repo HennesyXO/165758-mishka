@@ -1,0 +1,23 @@
+.feedback {
+    display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.feedback input {
+  display: none;
+}
+.feedback__title {
+  padding-bottom: 12%;
+
+}
+.feedback__text {
+  padding-bottom: 12.5%;
+}
+
+.feedback__author {
+  padding-bottom: 6%;
+}
+.feedback__contacts {
+  padding-bottom: 10%;
+}
