@@ -10,39 +10,51 @@
     <meta name="robots" content="noindex, nofollow">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <!-- font-family: 'Open Sans', sans-serif; -->
     <!-- <link rel="stylesheet" href="css/style.min.css"> -->
     <link rel="stylesheet" href="css/style.css">
 
   </head>
   <body class="no-js">
     <header class="page-header">
-      <div class="page-header__logo">
-        <a href="index.html">
-          <img src="http://via.placeholder.com/350x150" width="86" height="35" alt="logo">
-        </a>
-      </div>
+
       <nav class="main-nav main-nav--opened">
         <button class="main-nav__toggle" type="button">Открыть меню</button> <!-- width="20" height="14" -->
+        <div class="page-header__logo">
+          <a href="index.html">
+            <img src="img/logo-mobile.svg" width="86" height="35" alt="logo">
+          </a>
+        </div>
 
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="catalog.html" class="main-nav__link">Каталог товаров</a></li>
+          <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Каталог товаров</a></li>
           <li class="main-nav__item"><a href="form.html" class="main-nav__link">Вязание на заказ</a></li>
-          <li class="main-nav__item main-nav__item--active"><a href="#" class="main-nav__link">Поиск по сайту</a></li>
-          <li class="main-nav__item"><a href="https://htmlacademy.ru/#" class="main-nav__link">Корзина: пока пуста</a></li>
+          <li class="main-nav__item"><a href="arrivals.html" class="main-nav__link  main-nav__link--sub">Новые поступления</a></li>
+          <li class="main-nav__item"><a href="sales.html" class="main-nav__link  main-nav__link--sub">Распродажа</a></li>
         </ul>
+        <form class="search-form">
+          <label for="search-field" class="search-form__label" tabindex="0">
+            <input class="search-form__field" type="search" name="search"  id="search-field" placeholder="Поиск по сайту">
+            <span class="visually-hidden">Поиск по сайту</span>
+          </label>
+        </form>
+        <a href="#" class="main-nav__link main-nav__link--cart">Корзина: пока пуста</a>
+
+        <p class="main-nav__description">
+            Бесплатная доставка по России
+          </p>
       </nav>
     </header>
     <main>
       <div class="galery">
         <h1 class="galery__title">Милые штуки ручной работы для дома</h1>
-        <a href="#" class="galery__group galery__group--value1">Предметы интерьера <!-- width="41" height="62" -->
-        </a>
+        <div class="galery-blocks">
+          <a href="#" class="galery__group galery__group--value1">Предметы интерьера <!-- width="41" height="62" -->
+          </a>
 
-        <a href="#" class="galery__group galery__group--value2">Детские игрушки
-        </a><!-- width="61" height="61" -->
+          <a href="#" class="galery__group galery__group--value2">Детские игрушки
+          </a><!-- width="61" height="61" -->
+        </div>
       </div>
-
       <section class="featured">
         <div class="featured-inner">
           <h2 class="featured__title">Вязаные корзинки</h2>
@@ -63,25 +75,25 @@
               <td>15 см</td>
             </tr>
           </table>
-          <img class="featured__img" src="http://placehold.it/315x260" alt="Knitted goods on the hands" width="260" height="315">
+          <img class="featured__img" src="img/triple-set-mobile@1x.jpg" alt="Knitted goods on the hands" width="260" height="315">
           <span class="featured__price">Цена: 990 руб.</span>
-          <a href="#" class="btn">Заказать</a>
+          <a href="#" class="btn featured__btn">Заказать</a>
 
         </div>
       </section>
       <section class="about">
         <h2 class="about_title">Коротко о нас:</h2>
 
-        <p class="about__text about__text--img1">Экологически чистые материалы</p><!-- width="33" height="38" -->
-        <p class="about__text about__text--img2">Скандинавский стиль по российской цене</p><!-- width="47" height="27" -->
-        <p class="about__text about__text--img3">Увеличивает лайки на фотографиях</p><!-- width="34" height="27" -->
-        <p class="about__text about__text--img4">Связано вручную с любовью и умилением</p> <!-- width="35" height="34"
- -->    <p class="about__text about__text--img5">Поддержка отечественного производителя</p><!-- width="55" height="23" -->
-        <p class="about__text about__text--img6">Поставляется в подарочной упаковке</p><!-- width="33" height="32" -->
+        <p class="about__text about__text--img1">Экологически чистые материалы</p>
+        <p class="about__text about__text--img2">Скандинавский стиль по российской цене</p>
+        <p class="about__text about__text--img3">Увеличивает лайки на фотографиях</p>
+        <p class="about__text about__text--img4">Связано вручную с любовью и умилением</p>
+        <p class="about__text about__text--img5">Поддержка отечественного производителя</p>
+        <p class="about__text about__text--img6">Поставляется в подарочной упаковке</p>
       </section>
 
       <section class="feedback">
-        <h3 class="feedback__title">Отзывы</h3>
+        <h2 class="feedback__title">Отзывы</h2>
         <input name="toggle-btn" type="radio" id="slider-left" checked>
         <input name="toggle-btn" type="radio" id="slider-right">
 
@@ -90,12 +102,12 @@
         <span class="feedback__contacts">@misssssiskras</span>
 
         <div class="slider-controls">
-          <label for="slider-left"><img class="arrow-left" src="http://via.placeholder.com/50x50" alt="arrow-left" width="51" height="26"></label>
-          <label for="slider-right"><img class="arrow-right" src="http://via.placeholder.com/50x50" alt="arrow-right" width="51" height="26"></label>
+          <label for="slider-left"><img class="arrow-left" src="img/icon-left-arrow.svg" alt="arrow-left" width="51" height="26"></label>
+          <label for="slider-right"><img class="arrow-right" src="img/icon-right-arrow.svg" alt="arrow-right" width="51" height="26"></label>
         </div>
 
         <div class="feedback-btn">
-          <button type="submit" class="catalog-item-btn">Написать</button>
+          <button type="submit" class="btn">Написать</button>
         </div>
         <!-- wave line /\/\/\/\/\/\/\/\/\/\/\/\/\/ -->
         <!-- <img  width="320" height="7"> -->
@@ -124,22 +136,26 @@
     <footer class="footer">
       <div class="footer-wrapper">
 
+        <a href="index.html" class="footer__logo">
+          <img src="img/logo-footer.png" alt="">
+        </a>
+
         <div class="social">
           <a class="social__btn social__btn--in" href="http://via.placeholder.com/50x50">
-            <img class="insta-svg" src="http://via.placeholder.com/50x50" alt="" width="22" height="21">
+            <img class="insta-svg" src="img/icon-insta.svg" alt="" width="22" height="21">
           </a>
-          <a class="social__btn social__btn--fb" href="http://via.placeholder.com/50x50">
-            <img src="http://via.placeholder.com/50x50" alt="" width="15" height="29">
+          <a class="social__btn social__btn--fb" href="img/icon-fb.svg">
+            <img src="img/icon-fb.svg" alt="" width="15" height="29">
           </a>
-          <a class="social__btn social__btn--tw" href="http://via.placeholder.com/50x50">
-            <img class="twitter-svg" src="http://via.placeholder.com/50x50" alt="" width="24" height="20">
+          <a class="social__btn social__btn--tw" href="img/icon-twitter.svg">
+            <img class="twitter-svg" src="img/icon-twitter.svg" alt="" width="24" height="20">
           </a>
         </div>
 
         <div class="copyright">
           <p class="copyright__text">Разработано </p>
           <a href="#"  class="copyright__logo">
-            <img class="htmlacademy-svg" src="http://via.placeholder.com/50x50" alt="" width="27" height="34">
+            <img class="htmlacademy-svg" src="img/htmlacademy.svg" alt="" width="27" height="34">
           </a>
         </div>
 

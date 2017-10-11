@@ -1,0 +1,39 @@
+.footer {
+  background-color: $gray-bg;
+
+}
+
+.footer-wrapper {
+  box-sizing: border-box;
+  width: 320px;
+  padding: 0 30px;
+  margin: 0 auto;
+
+  @media #{$tablet-widths} {
+    display: flex;
+    width: 768px;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+        -webkit-align-items: center;
+                align-items: center;
+    padding: 0 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  @media #{$desktop-widths} {
+    width: 1150px;
+  }
+}
+
+.footer__logo {
+  display: none;
+
+  @media #{$tablet-widths} {
+    display: block;
+    width: 103px;
+    height: 34px;
+    margin-right: 75px;
+  }
+
+}

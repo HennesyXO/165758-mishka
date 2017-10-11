@@ -17,32 +17,44 @@
   </head>
   <body class="no-js">
     <header class="page-header">
-      <div class="page-header__logo">
-        <a href="index.html">
-          <img src="http://via.placeholder.com/350x150" width="86" height="35" alt="logo">
-        </a>
-      </div>
+
       <nav class="main-nav main-nav--opened">
         <button class="main-nav__toggle" type="button">Открыть меню</button> <!-- width="20" height="14" -->
+        <div class="page-header__logo">
+          <a href="index.html">
+            <img src="img/logo-mobile.svg" width="86" height="35" alt="logo">
+          </a>
+        </div>
 
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Каталог товаров</a></li>
           <li class="main-nav__item"><a href="form.html" class="main-nav__link">Вязание на заказ</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__link">Поиск по сайту</a></li>
-          <li class="main-nav__item"><a href="https://htmlacademy.ru/#" class="main-nav__link">Корзина: пока пуста</a></li>
+          <li class="main-nav__item"><a href="arrivals.html" class="main-nav__link  main-nav__link--sub">Новые поступления</a></li>
+          <li class="main-nav__item"><a href="sales.html" class="main-nav__link  main-nav__link--sub">Распродажа</a></li>
         </ul>
+        <form class="search-form">
+          <label for="search-field" class="search-form__label" tabindex="0">
+            <input class="search-form__field" type="search" name="search"  id="search-field" placeholder="Поиск по сайту">
+            <span class="visually-hidden">Поиск по сайту</span>
+          </label>
+        </form>
+        <a href="#" class="main-nav__link main-nav__link--cart">Корзина: пока пуста</a>
+
+        <p class="main-nav__description">
+            Бесплатная доставка по России
+          </p>
       </nav>
     </header>
 
     <main>
       <div class="catalog">
-        <h1 class="text">Каталог товаров</h1>
+        <h1 class="catalog-title">Каталог товаров</h1>
 
-        <div class="catalog-items">
+        <section class="catalog-list">
 
           <article class="catalog-item">
+            <img width="260" height="195" src="img/photo-hare-mobile@1x.jpg" alt="Printed rabbit">
             <div class="catalog-item__inner">
-              <img width="260" height="195" src="http://placehold.it/150x100" alt="Printed rabbit">
               <a href="#"><h5 class="catalog-item__title">Зайчик-попрыгайчик</h5></a>
 
               <p class="catalog-item__description">Рост 30 см, вес 200 г</p>
@@ -54,8 +66,8 @@
           </article>
 
           <article class="catalog-item">
+            <img width="260" height="195" src="img/photo-bowl-mobile@1x.jpg" alt="Printed backet">
             <div class="catalog-item__inner">
-              <img width="260" height="195" src="http://placehold.it/150x100" alt="Printed backet">
               <a href="#">
                 <h5 class="catalog-item__title">Корзинка для белья</h5>
               </a>
@@ -70,8 +82,8 @@
           </article>
 
           <article class="catalog-item">
+            <img  class="catalog-item__img" width="260" height="195" src="img/photo-toys-mobile@1x.jpg" alt="Big Printed backet">
             <div class="catalog-item__inner">
-              <img width="260" height="195" src="http://placehold.it/150x100" alt="Big Printed backet">
               <a href="#"><h5 class="catalog-item__title">Большая корзинка<br>для игрушек</h5></a>
 
               <p class="catalog-item__description">Диаметр 30 см, высота 30 см</p>
@@ -82,10 +94,14 @@
 
             </div>
           </article>
+        </section>
 
-          <article class="video">
-            <h5 class="video__title">Процесс производства</h5>
-            <video src="http://placehold.it/150x100" width="32" height="22"></video><!-- width="32" height="22" -->
+          <article class="video-block">
+            <h5 class="video-block__title">Процесс производства</h5>
+            <video class="video-block__video" src="http://placehold.it/350x150" width="32" height="22"></video><!-- width="32" height="22" -->
+            <button class="video-block__btn">
+              <span class="visually-hidden">Пауза/продолжить видео</span>
+            </button>
 
             <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
             <a href="#">Сделать заказ</a>
@@ -98,22 +114,26 @@
     <footer class="footer">
       <div class="footer-wrapper">
 
+        <a href="index.html" class="footer__logo">
+          <img src="img/logo-mobile.svg" alt="">
+        </a>
+
         <div class="social">
           <a class="social__btn social__btn--in" href="http://via.placeholder.com/50x50">
-            <img class="insta-svg" src="http://via.placeholder.com/50x50" alt="" width="22" height="21">
+            <img class="insta-svg" src="img/icon-insta.svg" alt="" width="22" height="21">
           </a>
-          <a class="social__btn social__btn--fb" href="http://via.placeholder.com/50x50">
-            <img src="http://via.placeholder.com/50x50" alt="" width="15" height="29">
+          <a class="social__btn social__btn--fb" href="img/icon-fb.svg">
+            <img src="img/icon-fb.svg" alt="" width="15" height="29">
           </a>
-          <a class="social__btn social__btn--tw" href="http://via.placeholder.com/50x50">
-            <img class="twitter-svg" src="http://via.placeholder.com/50x50" alt="" width="24" height="20">
+          <a class="social__btn social__btn--tw" href="img/icon-twitter.svg">
+            <img class="twitter-svg" src="img/icon-twitter.svg" alt="" width="24" height="20">
           </a>
         </div>
 
         <div class="copyright">
           <p class="copyright__text">Разработано </p>
           <a href="#"  class="copyright__logo">
-            <img class="htmlacademy-svg" src="http://via.placeholder.com/50x50" alt="" width="27" height="34">
+            <img class="htmlacademy-svg" src="img/htmlacademy.svg" alt="" width="27" height="34">
           </a>
         </div>
 
