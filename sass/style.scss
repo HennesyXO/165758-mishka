@@ -1,8 +1,7 @@
 @import "general/normalize";
 @import "general/variables";
-@import "general/body.scss";
-@import "general/font.scss";
-
+@import "general/body";
+@import "general/font";
 @import "blocks/about";
 @import "blocks/btn";
 @import "blocks/catalog";
@@ -13,11 +12,10 @@
 @import "blocks/featured";
 @import "blocks/feedback";
 @import "blocks/footer";
-
 @import "blocks/form";
 @import "blocks/form-title";
 @import "blocks/galery";
-@import "blocks/main-nav.scss";
+@import "blocks/main-nav";
 @import "blocks/map";
 @import "blocks/page-header";
 @import "blocks/popup";

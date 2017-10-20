@@ -1,54 +1,60 @@
 .galery {
-  display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-      -webkit-justify-content: flex-end;
-              justify-content: flex-end;
-      background: //url("../img/hero-mobile") 50% 100% no-repeat,
-              url("../img/hero-mobile@1x.jpg") center no-repeat;
-
-  background-size: 100% 100%, cover;
-  min-height: 490px;
   position: relative;
+
+  background-position: -100px;
+  min-width: 320px;
+  min-height: 490px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
+
 .galery__title {
+  padding-top: 75px;
+  padding-bottom: 120px;
   text-align: center;
+  font-size: 27px;
 }
+
 .galery-blocks {
   position: relative;
 }
 
 .galery__group {
-
   display: block;
-  width: 100%;
-  //min-height: 105px;
+  width: 120px;
   color: $alt-color;
-  font-size: 1.26em;
-  font-weight: bold;
-  background-color: $lazurny;
-  padding: 9.3%;
+  font-size: 19px;
+  font-weight: 700;
+  padding: 20px;
+  padding-right: 220px;
   text-align: left;
 
-  &--value1::before {
-  content: "";
-  position: absolute;
-  top: 20px;
-  right: 15px;
-  width: 41px;
-  height: 62px;
-  background: url("../img/icon-interior.svg") no-repeat;
+  &--interier {
+    background-color: $lazurny;
   }
 
-  &--value2::before {
-  content: "";
-  position: absolute;
-  top: 120px;
-  right: 10px;
-  width: 61px;
-  height: 61px;
+  &--toys {
+    background-color: $dark-blue;
+  }
 
-  background: url("../img/icon-toy.svg") no-repeat;
+  &--interier::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 41px;
+    height: 62px;
+    background: url("../img/icon-interior.svg") no-repeat;
+  }
+
+  &--toys::before {
+    content: "";
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    width: 61px;
+    height: 61px;
+    background: url("../img/icon-toy.svg") no-repeat;
   }
 }

@@ -1,83 +1,80 @@
 .about {
-    display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-      margin-bottom: 60px;
+  margin-bottom: 60px;
+}
+
+.about__inner {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .about-title {
-  font-size: 1.5em;
+  font-size: 25px;
   padding-top: 10.3%;
 }
 
 .about__text {
+  font-size: 17px;
   position: relative;
   padding-top: 90px;
   font-weight: bold;
 
   &--img1::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 15px;
-  width: 33px;
-  height: 38px;
-  background: url("../img/icon-feature-flower.svg") no-repeat;
-
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 33px;
+    height: 38px;
+    background: url("../img/icon-feature-flower.svg") no-repeat;
   }
 
   &--img2::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 15px;
-  width: 47px;
-  height: 27px;
-  background: url("../img/icon-feature-money.svg") no-repeat;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 47px;
+    height: 27px;
+    background: url("../img/icon-feature-money.svg") no-repeat;
   }
 
   &--img3::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 15px;
-  width: 34px;
-  height: 27px;
-  background: url("../img/icon-feature-heart.svg") no-repeat;
-
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 34px;
+    height: 27px;
+    background: url("../img/icon-feature-heart.svg") no-repeat;
   }
 
   &--img4::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 15px;
-  width: 35px;
-  height: 34px;
-  background: url("../img/icon-feature-ball.svg") no-repeat;
-
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 35px;
+    height: 34px;
+    background: url("../img/icon-feature-ball.svg") no-repeat;
   }
 
   &--img5::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 15px;
-  width: 55px;
-  height: 23px;
-  background: url("../img/icon-feature-rocket.svg") no-repeat;
-
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 55px;
+    height: 23px;
+    background: url("../img/icon-feature-rocket.svg") no-repeat;
   }
 
   &--img6::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 15px;
-  width: 33px;
-  height: 32px;
-  background: url("../img/icon-feature-gift.svg") no-repeat;
-
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 33px;
+    height: 32px;
+    background: url("../img/icon-feature-gift.svg") no-repeat;
   }
 }

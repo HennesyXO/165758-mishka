@@ -15,10 +15,10 @@
 
   </head>
   <body class="no-js">
-    <header class="page-header">
+    <header class="page-header page-header--index">
 
       <nav class="main-nav main-nav--opened">
-        <button class="main-nav__toggle" type="button">Открыть меню</button> <!-- width="20" height="14" -->
+        <button class="main-nav__toggle" type="button">меню</button> <!-- width="20" height="14" -->
         <div class="page-header__logo">
           <a href="index.html">
             <img src="img/logo-mobile.svg" width="86" height="35" alt="logo">
@@ -43,18 +43,20 @@
             Бесплатная доставка по России
           </p>
       </nav>
-    </header>
-    <main>
+
       <div class="galery">
         <h1 class="galery__title">Милые штуки ручной работы для дома</h1>
-        <div class="galery-blocks">
-          <a href="#" class="galery__group galery__group--value1">Предметы интерьера <!-- width="41" height="62" -->
-          </a>
 
-          <a href="#" class="galery__group galery__group--value2">Детские игрушки
+        <div class="galery-blocks">
+          <a href="#" class="galery__group galery__group--interier">Предметы интерьера <!-- width="41" height="62" -->
+          </a>
+          <a href="#" class="galery__group galery__group--toys">Детские игрушки
           </a><!-- width="61" height="61" -->
         </div>
       </div>
+    </header>
+
+    <main>
       <section class="featured">
         <div class="featured-inner">
           <h2 class="featured__title">Вязаные корзинки</h2>
@@ -75,66 +77,72 @@
               <td>15 см</td>
             </tr>
           </table>
-          <img class="featured__img" src="img/triple-set-mobile@1x.jpg" alt="Knitted goods on the hands" width="260" height="315">
-          <span class="featured__price">Цена: 990 руб.</span>
+          <img class="featured__img" src="img/triple-set-mobile@1x.jpg" alt="Knitted goods on the hands" >
+          <p class="featured__price">Цена: 990 руб.</p>
           <a href="#" class="btn featured__btn">Заказать</a>
 
         </div>
       </section>
       <section class="about">
-        <h2 class="about_title">Коротко о нас:</h2>
+        <div class="about__inner">
+          <h2 class="about_title">Коротко о нас:</h2>
 
-        <p class="about__text about__text--img1">Экологически чистые материалы</p>
-        <p class="about__text about__text--img2">Скандинавский стиль по российской цене</p>
-        <p class="about__text about__text--img3">Увеличивает лайки на фотографиях</p>
-        <p class="about__text about__text--img4">Связано вручную с любовью и умилением</p>
-        <p class="about__text about__text--img5">Поддержка отечественного производителя</p>
-        <p class="about__text about__text--img6">Поставляется в подарочной упаковке</p>
+          <p class="about__text about__text--img1">Экологически чистые материалы</p>
+          <p class="about__text about__text--img2">Скандинавский стиль по российской цене</p>
+          <p class="about__text about__text--img3">Увеличивает лайки на фотографиях</p>
+          <p class="about__text about__text--img4">Связано вручную с любовью и умилением</p>
+          <p class="about__text about__text--img5">Поддержка отечественного производителя</p>
+          <p class="about__text about__text--img6">Поставляется в подарочной упаковке</p>
+        </div>
       </section>
 
       <section class="feedback">
-        <h2 class="feedback__title">Отзывы</h2>
-        <input name="toggle-btn" type="radio" id="slider-left" checked>
-        <input name="toggle-btn" type="radio" id="slider-right">
+        <div class="feedback__inner">
 
-        <p class="feedback__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-        <p class="feedback__author">Анастасия Красильникова</p>
-        <span class="feedback__contacts">@misssssiskras</span>
+          <h2 class="feedback__title">Отзывы</h2>
+          <input name="toggle-btn" type="radio" id="slider-left" checked>
+          <input name="toggle-btn" type="radio" id="slider-right">
 
-        <div class="slider-controls">
-          <label for="slider-left"><img class="arrow-left" src="img/icon-left-arrow.svg" alt="arrow-left" width="51" height="26"></label>
-          <label for="slider-right"><img class="arrow-right" src="img/icon-right-arrow.svg" alt="arrow-right" width="51" height="26"></label>
+          <p class="feedback__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <p class="feedback__author">Анастасия Красильникова</p>
+          <span class="feedback__contacts">@misssssiskras</span>
+
+          <div class="slider-controls">
+            <label for="slider-left"><img class="arrow-left" src="img/icon-left-arrow.svg" alt="arrow-left"></label>
+            <label for="slider-right"><img class="arrow-right" src="img/icon-right-arrow.svg" alt="arrow-right" ></label>
+          </div>
+          <a class="btn">Написать</a>
+          </div>
         </div>
-
-        <div class="feedback-btn">
-          <button type="submit" class="btn">Написать</button>
-        </div>
-        <!-- wave line /\/\/\/\/\/\/\/\/\/\/\/\/\/ -->
-        <!-- <img  width="320" height="7"> -->
       </section>
 
       <section class="contacts">
-        <h3 class="contacts__title">Контакты</h3>
-        <div class="contacts__email">
-          <p class="">e-mail:</p>
-          <a class="mail-to" href="info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-        </div>
-        <div class="contacts__adress">
-          <p class="">адрес:</p>
-          <p>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+        <div class="contacts-inner">
+          <h3 class="contacts__title">Контакты</h3>
+          <table class="contacts__table">
+            <tr class="contacts__email">
+              <th>e-mail:</th>
+              <td><a class="contacts__mail-to" href="info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
+            </tr>
+            <tr>
+              <th class="contacts__adress">адрес:</th>
+              <td>г. Санкт-Петербург, <br> ул. Большая Конюшенная, <br>д. 19/8, офис 101</td>
+            </tr>
+          </table>
+
         </div>
       </section>
-<!-- map -->
-      <div class="map"></div>
-
-      <button type="submit" class="btn">
-      Напишите нам
-      </button>
+      <div class="map">
+        <img src="img/map-mobile@1x.jpg" alt="map">
+        <div class="btn-wrapper">
+          <a class="btn">Напишите нам</a>
+        </div>
+      </div>
 
     </main>
 
     <footer class="footer">
-      <div class="footer-wrapper">
+      <div class="footer__wrapper">
 
         <a href="index.html" class="footer__logo">
           <img src="img/logo-footer.png" alt="">
@@ -153,9 +161,11 @@
         </div>
 
         <div class="copyright">
-          <p class="copyright__text">Разработано </p>
-          <a href="#"  class="copyright__logo">
+
+          <a href="https://htmlacademy.ru/intensive/adaptive"  class="copyright__logo">
+            Разработано
             <img class="htmlacademy-svg" src="img/htmlacademy.svg" alt="" width="27" height="34">
+            <span class="visually-hidden">HTML-Academy</span>
           </a>
         </div>
 

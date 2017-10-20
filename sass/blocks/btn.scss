@@ -1,25 +1,33 @@
-.btn{
+.btn {
   display: block;
-  padding-top: 18px;
-  padding-bottom: 18px;
-  //width: 100%;
+  padding: 14px 20px;
+  box-sizing: border-box;
+  line-height: 1.2;
   font-size: 17px;
-  line-height: 1.1;
-  font-weight: bold;
+  font-weight: 700;
   color: $base-color;
+  background-color: $alt-color;
   text-transform: uppercase;
+  text-decoration: none;
   text-align: center;
-  border: 2px solid black;
+  border: 2px solid $base-color;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $alt-color;
+    background-color: $base-color;
+  }
 }
 
+.btn-wrapper {
+  padding: 40px 30px;
+}
 
 @media #{$tablet-widths} {
-  .btn{
-  }
+  //*
 }
 
 @media #{$desktop-widths} {
-  .btn{
-  }
+  //*
 }

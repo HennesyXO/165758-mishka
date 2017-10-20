@@ -44,80 +44,100 @@
             Бесплатная доставка по России
           </p>
       </nav>
+      <div class="page-header__title">
+        <h1 class="form-title">Вязание на заказ</h1>
+      </div>
     </header>
     <main>
-      <h1 class="form-title">Вязание на заказ</h1>
-      <form action="https://echo.htmlacademy.ru" method="get" class="form">
+
+      <form action="https://echo.htmlacademy.ru" method="post" class="form">
         <p class="form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 
-        <fieldset class="form__radio">
-          <legend>Тип</legend>
-          <input type="radio" name="type" value="value1" id="value1" checked>
-          <label for="value1">Аксессуар для интерьера</label>
+        <fieldset class="form__block">
+          <div class="form__inner">
+            <span class="form__title">Тип</span>
+            <div class="form__inputblock">
+              <input type="radio" name="type" value="value1" id="value1" class="form__radioinput visually-hidden" checked>
+              <label  class="form__radio-label" for="value1">Аксессуар для интерьера</label>
 
-          <input type="radio" name="type" value="value2" id="value2">
-          <label for="value2">Детская игрушка</label>
-        </fieldset>
-
-        <fieldset class="form__checkbox">
-          <legend>Цвет</legend>
-          <!-- width="44" height="43" of checkbox-->
-          <input type="checkbox" name="colours" value="white" id="white" checked>
-          <label for="white">Белый</label>
-
-          <input type="checkbox" name="colours" value="gray" id="gray" checked>
-          <label for="gray">Серый</label>
-
-          <input type="checkbox" name="colours" value="tiffani" id="tiffani">
-          <label for="tiffani">«Тиффани»</label>
-
-          <input type="checkbox" name="colours" value="black" id="black">
-          <label for="black">Черный</label>
-
-          <input type="checkbox" name="colours" value="pink" id="pink">
-          <label for="pink">Розовый</label>
-
-          <input type="checkbox" name="colours" value="orange" id="orange">
-          <label for="orange">Оранжевый</label>
-
-        </fieldset>
-
-        <fieldset class="form__textfield">
-          <legend>фио</legend>
-
-            <div class="form__group-input">
-              <label class="form__label" for="name">Имя:</label>
-              <input class="form__input" type="text" name="name" id="name" value="" placeholder="Введите ваше имя*">
+              <input type="radio" name="type" value="value2" id="value2" class="form__radioinput visually-hidden" >
+              <label  class="form__radio-label" for="value2">Детская игрушка</label>
             </div>
+          </div>
+        </fieldset>
 
-            <div class="form__group-input">
-              <label class="form__label" for="second-name">Фамилия:</label>
-              <input class="form__input" type="text" name="second-name" id="second-name" value="" placeholder="Укажите фамилию*">
+        <fieldset class="form__block form__block--gray">
+          <div class="form__inner">
+            <span class="form__title">Цвет</span>
+            <!-- width="44" height="43" of checkbox-->
+            <div class="form__inputblock form__inputblock--color">
+              <input type="checkbox" name="colours" value="white" id="white" class="checkbox visually-hidden" checked>
+              <label class="form__checkbox-label" for="white">Белый</label>
+
+              <input type="checkbox" name="colours" value="gray" id="gray" class="checkbox visually-hidden"  checked>
+              <label class="form__checkbox-label"for="gray">Серый</label>
+
+              <input type="checkbox" name="colours" value="tiffani" id="tiffani" class="checkbox visually-hidden" >
+              <label class="form__checkbox-label" for="tiffani">«Тиффани»</label>
+
+              <input type="checkbox" name="colours" value="black" id="black" class="checkbox visually-hidden" >
+              <label class="form__checkbox-label"for="black">Черный</label>
+
+              <input type="checkbox" name="colours" value="pink" id="pink" class="checkbox visually-hidden" >
+              <label class="form__checkbox-label" for="pink">Розовый</label>
+
+              <input type="checkbox" name="colours" value="orange" id="orange" class="checkbox visually-hidden" >
+              <label class="form__checkbox-label" for="orange">Оранжевый</label>
             </div>
+          </div>
 
-            <div class="form__group-input">
-              <label class="form__label  feedback-form__label--uppercase" for="patronymic">Отчество:</label>
-              <input class="form__input" type="text" name="patronymic" id="patronymic" value="" placeholder="Отчество, если желаете">
+        </fieldset>
+
+        <fieldset class="form__block">
+          <div class="form__inner">
+            <span class="form__title">фио</span>
+
+              <div class="form__inputgroup">
+                <label class="form__textlabel" for="name">
+                  Имя:
+                  <input class="form__input" type="text" name="name" id="name" value="" placeholder="Введите ваше имя*">
+                </label>
+                <label class="form__textlabel" for="second-name">
+                  Фамилия:
+                  <input class="form__input" type="text" name="second-name" id="second-name" value="" placeholder="Укажите фамилию*">
+                </label>
+                <label class="form__textlabel" for="patronymic">
+                  Отчество:
+                  <input class="form__input" type="text" name="patronymic" id="patronymic" value="" placeholder="Отчество, если желаете">
+                </label>
+              </div>
             </div>
         </fieldset>
 
-        <fieldset class="form-textfield">
-          <label class="form__label" for="phone">тел</label>
-          <input class="form__input form__input--phone" type="number" name="phone" id="phone" placeholder="+7 ХХХ ХХ ХХ*">
+        <fieldset class="form__block form__block--gray">
+          <div class="form__inner">
+            <label class="form__greenlabel" for="phone">тел</label>
+            <input class="form__input form__input--phone" type="number" name="phone" id="phone" placeholder="+7 ХХХ ХХ ХХ*">
+
+            <label class="form__greenlabel" for="e-mail">E-mail</label>
+            <input class="form__input form__input--email" type="email" name="e-mail" id="e-mail" placeholder="Ваш Email*">
+          </div>
         </fieldset>
 
-        <fieldset class="form-textfield">
-          <label class="form__label" for="e-mail">E-mail</label>
-          <input class="form__input form__input--email" type="email" name="e-mail" id="e-mail" placeholder="Ваш Email*">
+        <fieldset class="form__block">
+          <div class="form__inner">
+            <label for="textarea" class="form__greenlabel  form__greenlabel--textarea">
+              <span class="form__title">Доп</span>
+            </label>
+            <textarea class=" class="form__textarea" name="textarea" placeholder="Опишите все ваши пожелания к заказу"  id="textarea"></textarea>
+          </div>
         </fieldset>
 
-        <fieldset class="form-textfield">
+        <div class="form__inner form__inner--submit">
+          <p class="form__comment">*Поля обязательны для заполнения</p>
+          <button class="btn form__btn" type="submit">Отправить заказ</button>
+        </div>
 
-          <textarea class="form__textarea" name="textarea" rows="5" placeholder="Опишите все ваши пожелания к заказу">Доп</textarea>
-          <p class="form__required-fileds">*Поля обязательны для заполнения</p>
-        </fieldset>
-
-        <button type="submit" class="btn">Отправить заказ</button>
       </form>
     </main>
 
@@ -141,9 +161,11 @@
         </div>
 
         <div class="copyright">
-          <p class="copyright__text">Разработано </p>
-          <a href="#"  class="copyright__logo">
+
+          <a href="https://htmlacademy.ru/intensive/adaptive"  class="copyright__logo">
+            Разработано
             <img class="htmlacademy-svg" src="img/htmlacademy.svg" alt="" width="27" height="34">
+            <span class="visually-hidden">HTML-Academy</span>
           </a>
         </div>
 

@@ -1,15 +1,8 @@
 .catalog-list {
   display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
+
+  @media #{$desktop-widths} {
+    flex-direction: row;
+  }
 }
-
-@media #{$desktop-widths} {
-  .catalog-list {
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-
-      }
-    }
