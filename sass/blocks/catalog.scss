@@ -1,5 +1,5 @@
 .catalog {
-
+  //*
 }
 
 .catalog-title {
@@ -8,12 +8,11 @@
   font-weight: 700;
   color: $headings;
 
-@media #{$tablet-widths} {
+  @media #{$tablet-widths} {
     font-size: 2.8em;
   }
 
-@media #{$desktop-widths} {
-
+  @media #{$desktop-widths} {
     font-size: 3.5em;
   }
 }

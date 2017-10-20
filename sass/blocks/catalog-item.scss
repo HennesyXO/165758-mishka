@@ -10,8 +10,8 @@
     display: flex;
     width: 30%;
     margin-bottom: 53px;
-    }
   }
+}
 
 @media #{$desktop-widths} {
   .catalog-item {
@@ -25,6 +25,7 @@
     }
   }
 }
+
 .catalog-item__title {
   display: block;
   margin-bottom: 5px;

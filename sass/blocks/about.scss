@@ -19,63 +19,62 @@
   font-weight: bold;
 
   &--img1::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 15px;
-  width: 33px;
-  height: 38px;
-  background: url("../img/icon-feature-flower.svg") no-repeat;
-
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 33px;
+    height: 38px;
+    background: url("../img/icon-feature-flower.svg") no-repeat;
   }
 
   &--img2::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 15px;
-  width: 47px;
-  height: 27px;
-  background: url("../img/icon-feature-money.svg") no-repeat;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 47px;
+    height: 27px;
+    background: url("../img/icon-feature-money.svg") no-repeat;
   }
 
   &--img3::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 15px;
-  width: 34px;
-  height: 27px;
-  background: url("../img/icon-feature-heart.svg") no-repeat;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 34px;
+    height: 27px;
+    background: url("../img/icon-feature-heart.svg") no-repeat;
   }
 
   &--img4::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 15px;
-  width: 35px;
-  height: 34px;
-  background: url("../img/icon-feature-ball.svg") no-repeat;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 35px;
+    height: 34px;
+    background: url("../img/icon-feature-ball.svg") no-repeat;
   }
 
   &--img5::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 15px;
-  width: 55px;
-  height: 23px;
-  background: url("../img/icon-feature-rocket.svg") no-repeat;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 55px;
+    height: 23px;
+    background: url("../img/icon-feature-rocket.svg") no-repeat;
   }
 
   &--img6::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 15px;
-  width: 33px;
-  height: 32px;
-  background: url("../img/icon-feature-gift.svg") no-repeat;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 33px;
+    height: 32px;
+    background: url("../img/icon-feature-gift.svg") no-repeat;
   }
 }

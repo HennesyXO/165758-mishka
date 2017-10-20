@@ -25,7 +25,6 @@
 }
 
 .form__title {
-  display: inline-block;
   display: flex;
   align-items: center;
   font-size: 17px;
@@ -44,11 +43,10 @@
     display: block;
     flex-grow: 2;
 
-  @media #{$tablet-widths} {
-    display: none;
+    @media #{$tablet-widths} {
+      display: none;
     }
   }
-
 }
 
 .visually-hidden {
@@ -57,9 +55,9 @@
 
 .form__inputgroup {
   @media #{$tablet-widths} {
-    flex-grow:2;
+    flex-grow: 2;
     width: 500px;
-    }
+  }
 
   @media #{$desktop-widths} {
     width: 700px;
@@ -110,7 +108,7 @@
   }
 }
 //зеленый кружечек
-.form__radioinput:checked +label::after {
+.form__radioinput:checked + label::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -135,6 +133,7 @@
   @media #{$tablet-widths} {
     width: 240px;
     margin-bottom: 25px;
+
     &:nth-of-type(odd) {
       width: 260px;
     }
@@ -163,7 +162,7 @@
   background-size: 25px;
 
   @media #{$tablet-widths} {
-  background-size: auto;
+    background-size: auto;
   }
 }
 

@@ -1,4 +1,4 @@
-.btn{
+.btn {
   display: block;
   padding: 14px 20px;
   box-sizing: border-box;
@@ -25,11 +25,9 @@
 }
 
 @media #{$tablet-widths} {
-  .btn{
-  }
+  //*
 }
 
 @media #{$desktop-widths} {
-  .btn{
-  }
+  //*
 }
