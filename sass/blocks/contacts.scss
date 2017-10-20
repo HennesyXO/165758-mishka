@@ -1,0 +1,38 @@
+.contacts {// ***
+}
+
+.contacts-inner {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.contacts__title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.contacts__table {
+  margin-bottom: 40px;
+}
+
+.contacts__table th {
+  font-weight: 400;
+}
+
+.contacts__table td{
+ //***
+}
+
+.contacts__email {
+  padding-bottom: 50px;
+}
+
+.contacts__mail-to {
+  color: #000;
+  border-bottom: 2px solid $lazurny;
+}
+
+// .contacts__adress {
+//   padding-top: 0;
+//   margin-top: 0;
+// }

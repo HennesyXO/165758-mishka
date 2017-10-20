@@ -1,14 +1,11 @@
 .video {
-  display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
+  display: block;
+  width: 100%;
+  height: 150px;
+  background: $gray-bg ("../img/video-mobile@1x.jpg") no-repeat center;
 
-@media #{$desktop-widths} {
-  .video {
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
+  @media #{$desktop-widths} {
+    order: -1;
+    height: 455px;
   }
 }

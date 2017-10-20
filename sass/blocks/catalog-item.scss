@@ -16,7 +16,6 @@
 @media #{$desktop-widths} {
   .catalog-item {
     flex-direction: column;
-    width: 30%;
     margin: 0;
     margin-right: 50px;
     margin-bottom: 55px;
@@ -38,6 +37,4 @@
     font-size: 1.33em;
     line-height: 1.2;
   }
-
-
 }

@@ -1,4 +1,6 @@
 .main-nav {
+  width: 320px;
+  margin: 0 auto;
   position: relative;
 }
 
@@ -9,5 +11,17 @@
 }
 
 .main-nav__list {
+  display: none;
+}
+
+.search-form {
+  display: none;
+}
+
+.main-nav__link--cart {
+  display: none;
+}
+
+.main-nav__description {
   display: none;
 }
